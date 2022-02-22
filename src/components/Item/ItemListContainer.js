@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import { products } from './items';
 import { useParams } from 'react-router';
+import Category from '../Navbar/Category';
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
@@ -33,6 +34,7 @@ const ItemListContainer = () => {
                 </div>
             </div>
             <div className='row justify-content-center text-decoration-none'>
+                <Category/>
                 <ItemList items={items} />
             </div>
         </div>

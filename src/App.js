@@ -4,15 +4,15 @@ import ItemDetailContainer from './components/Item/ItemDetailContainer';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from "react-use-cart";
-import Slider from './components/Slider';
 import Error404 from './components/pages/Error404';
+import Slider from './components/Slider';
 
 function App() {
     return (
         <CartProvider>
             <Router>
                 <Navbar />
-                <Slider />
+                <Slider/>
                 <Routes>
                     <Route path="/" element={<ItemListContainer />} />
                     <Route path="/category/:id" element={<ItemListContainer />} />
