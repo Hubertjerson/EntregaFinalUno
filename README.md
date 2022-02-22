@@ -17,6 +17,8 @@ Correr el servidor:
 Se abre una pestaña del navegador en el puerto 3000:
 #### Sino copiar esta URL y pegarla en el navegador: http://localhost:3000
 
+# ScreenShot
+
 ![Imagen](https://github.com/Hubertjerson/Imagenes/blob/01feb6d86277b02f3e5d05e9d2aa9959553cca98/React%20App%20-%20Google%20Chrome%2022_02_2022%201_35_53.png)
 
 ![Imagen2](https://github.com/Hubertjerson/Imagenes/blob/01feb6d86277b02f3e5d05e9d2aa9959553cca98/React%20App%20-%20Google%20Chrome%2022_02_2022%201_39_18.png)
