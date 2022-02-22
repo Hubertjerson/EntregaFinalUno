@@ -1,0 +1,33 @@
+.Container{
+    flex: 1;
+    margin: 10px;
+    min-width: 280px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5fbfd;
+}
+
+.Imagen{
+    height:300px;
+    width: 250px;
+}
+
+.Info{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px ;
+}
+
+.Button{
+    text-decoration: none;
+    border-radius: 10px solid;
+    color: black;
+    
+}
