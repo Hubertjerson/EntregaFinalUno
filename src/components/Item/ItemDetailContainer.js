@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail';
 import { traerProductos } from './items';
 
 const ItemDetailContainer = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [item, setItem] = useState({});
     const { id } = useParams();
 
@@ -21,7 +21,8 @@ const ItemDetailContainer = () => {
             });
     }, [id]);
 
-    return <>{loading ? <h1>Cargando...</h1> : <ItemDetail item={item} />}</>;
+
+    return <>{loading ? <h1>Cargando.....</h1> : <ItemDetail item={item} />}</>;
 };
 
 export default ItemDetailContainer;

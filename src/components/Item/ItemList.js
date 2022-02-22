@@ -4,14 +4,11 @@ import Item from './Item';
 const ItemList = ({ items }) => {
     return (
         <>
-            <div
-                style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    maxWidth: '100%',
-                    margin: '0 auto',
-                }}
-            >
+            <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                maxWidth: '100%',
+            }}>
                 {items.map((item) => (
                     <Item key={item.id} {...item} />
                 ))}

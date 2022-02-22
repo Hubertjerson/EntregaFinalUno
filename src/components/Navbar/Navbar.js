@@ -45,34 +45,34 @@ const MenuItem = styled.div`
 
 const Navbar = () => {
     return (
-      <Container>
-      <Wrapper>
-          <Left>
-              <Languaje>ES</Languaje>
-          </Left>
-          <Center><Logo>STILOSMIKA</Logo></Center>
-          <Right>
-              <MenuItem>
-                  <Link to="/" className='btn btn-outline-primary'>Home</Link>
-              </MenuItem>
-              <MenuItem>
-                  <Link to="/category/hombre" className='btn btn-outline-primary'>Hombre</Link>
-              </MenuItem>
-              <MenuItem>
-                  <Link to="/category/accesorio" className='btn btn-outline-primary'>Acessorio</Link>
-              </MenuItem>
-              <MenuItem>
-                  <Link to="/category/electronics" className='btn btn-outline-primary'>Electronica</Link>
-              </MenuItem>
-              <MenuItem>
-                  <Link to="/category/mujer" className='btn btn-outline-primary'>Mujer</Link>
-              </MenuItem>
-              <MenuItem>
-                  <Cart/>
-              </MenuItem>
-          </Right>
-      </Wrapper>
-  </Container>
+        <Container>
+            <Wrapper>
+                <Left>
+                    <Languaje>ES</Languaje>
+                </Left>
+                <Center><Logo>STILOSMIKA</Logo></Center>
+                <Right>
+                    <MenuItem>
+                        <Link to="/" className='btn btn-outline-primary'>Home</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/category/hombre" className='btn btn-outline-primary'>Hombre</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/category/accesorio" className='btn btn-outline-primary'>Acessorio</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/category/electronics" className='btn btn-outline-primary'>Electronica</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/category/mujer" className='btn btn-outline-primary'>Mujer</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Cart />
+                    </MenuItem>
+                </Right>
+            </Wrapper>
+        </Container>
     );
 };
 
