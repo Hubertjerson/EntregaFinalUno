@@ -1,0 +1,40 @@
+.footer {
+  background-color: black;
+  padding: 10px;
+}
+
+i {
+  color: #fff;
+  
+}
+.footer__info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__datos h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.footer__datos p {
+  font-size: 1.4rem;
+}
+
+.footer__datos i {
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+.footer__media {
+  display: flex;
+  justify-content: center;
+}
+.footer__media i {
+  font-size: 2.4rem;
+  margin: 0 1.6rem;
+}

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from "react-use-cart";
 import Error404 from './components/pages/Error404';
 import Slider from './components/pages/Slider';
+import Footer from './components/pages/Footer';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/item/:id" element={<ItemDetailContainer />} />
                     <Route path="*" element={<Error404 />} />
                 </Routes>
+                <Footer/>
             </BrowserRouter>
         </CartProvider>
     );
