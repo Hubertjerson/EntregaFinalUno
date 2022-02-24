@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from "react-use-cart";
 import Error404 from './components/pages/Error404';
+import Slider from './components/pages/Slider';
 
 function App() {
     return (
@@ -14,10 +15,10 @@ function App() {
                 <Navbar />
 
                 <Routes>
-                    <Route path="/" element={<ItemListContainer />} />
+                    <Route exact path="/" element={<Slider />}/>
                     <Route path="/category/:id" element={<ItemListContainer />} />
                     <Route path="/item/:id" element={<ItemDetailContainer />} />
-                    <Route path="*" element={<Error404/>}/>
+                    <Route path="*" element={<Error404 />} />
                 </Routes>
             </BrowserRouter>
         </CartProvider>
