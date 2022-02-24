@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     width:100%;
@@ -98,13 +99,13 @@ const Slider = () => {
                         <InfoContainer>
                             <Title>{item.title}</Title>
                             <Desc>{item.desc}</Desc>
-                            <Button>COMPRA AHORA</Button>
+                            <Button><Link to='/category/hombre'>Ingresar</Link></Button>
                         </InfoContainer>
                     </Slide>
                 ))}
             </Wrapper>
             <Arrow direction="right" onClick={() => handleclick("right")}>
-                <ArrowRightOutlined/>
+                <ArrowRightOutlined />
             </Arrow>
         </Container>
     )

@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import ItemCount from '../Item/ItemCount';
 import '../Item/ItemDetail.css'
 
-const ItemDetail = ({ item, onAdd, goCart }) => {
+const ItemDetail = ({ item }) => {
+    const [count, setCount] = useState(0)
+    const addHandler = (cantidad)=> {
+        setCount(cantidad)
+    };
+
 
     return (
         <>
@@ -17,14 +22,14 @@ const ItemDetail = ({ item, onAdd, goCart }) => {
                         <p className='Desc'>{item.description}</p>
                         <h3 className='Price'>${item.price}</h3>
                         <div className='mt-5'>
-                            {goCart ? (
-                                <Link to={'/cart'}>
-                                    <button className='btn-agregar'>Terminar Compra</button>
+                            {count === 0 ?
+                                <ItemCount stock={item.stock} onAdd={addHandler} />
+                                :
+                                <Link to="/cart">
+                                    <button className="boton-terminar">Terminar mi compra</button>
                                 </Link>
-                            ) : (
-                                <ItemCount item={item} onAdd={onAdd} />
-                            )}
-                            <Link className='Button' to="/">Voler al home</Link>
+                            }
+                                            <Link to={`/category/${item.category}`} className="button">Volver</Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Cart from '../Cart/Cart';
+import CartWidget from '../Cart/CartWidget';
 import '../Navbar/NavBar.css';
 
 
@@ -14,7 +14,7 @@ const Navbar = () => {
             <nav className="header-nav">
                 <Link to='/category/hombre' className='header-link'>Hombre</Link>
                 <Link to='/category/mujer' className='header-link'>Mujer</Link>
-                <Cart />
+                <CartWidget />
             </nav>
 
         </header>
