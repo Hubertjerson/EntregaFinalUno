@@ -1,13 +1,12 @@
 import React from 'react'
 import { Badge } from '@material-ui/core';
-import { ShoppingCartOutlined } from '@material-ui/icons';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import '../Css/_CartWidget.css';
 
 const CartWidget = () => {
     return (
-        <div>
-            <Badge badgeContent={4} color="primary">
-                <ShoppingCartOutlined/>
-            </Badge>
+        <div className="carrito">
+            <AiOutlineShoppingCart />
         </div>
     )
 }

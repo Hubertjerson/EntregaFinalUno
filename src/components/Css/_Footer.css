@@ -1,40 +1,30 @@
-.footer {
-  background-color: black;
-  padding: 10px;
+.fondo-footer{
+    background-color: black;
+}
+.redes{
+    font-size: 1.8rem;
+    margin: 4px 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
-i {
-  color: #fff;
-  
-}
-.footer__info {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+.redes:hover{
+    color: #ffaf26;
+    transition: all 0.2s ease-in-out;
 }
 
-.footer__datos h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
+h6{
+    font-weight: 300;
+    color: white;
 }
 
-.footer__datos p {
-  font-size: 1.4rem;
+.copy{
+    background-color: black;
 }
 
-.footer__datos i {
-  font-size: 1.8rem;
-  margin-right: 5px;
-}
-
-.footer__media {
-  display: flex;
-  justify-content: center;
-}
-.footer__media i {
-  font-size: 2.4rem;
-  margin: 0 1.6rem;
+.eric{
+    font-weight: 200;
+    font-size: 1rem;
+    color: rgb(208, 208, 208);
 }

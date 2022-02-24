@@ -1,62 +1,29 @@
-.Container {
-  padding-top: 5rem;
-  text-align: center;
-  justify-content: center;
-}
-
-.Wrapper {
-  padding: 50px;
-  display: flex;
-}
-
-.ImgContainer {
-  flex: 1;
-}
-.Image {
-  width: 80%;
-  height: 90vh;
-  object-fit: cover;
-}
-
-.InfoContainer {
-  flex: 1;
-  padding: 0px 50px;
+.container-detail {
+  border: 1px solid rgba(176, 176, 176, 0.543);
+  width: 404px;
 }
 
 .Title {
   font-weight: 600;
   padding-top: 20%;
+  text-align: center;
 }
 
-.Desc {
-  margin: 20px 0px;
+.descripcion {
   text-align: justify;
+  margin-top: 20px;
+  padding: 0px 5px;
 }
 
-.Price {
-  font-weight: 100;
-  font-size: 40px;
-  margin-bottom: 30px;
+.pricee {
+  color: black;
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.btn-agregar {
-  margin: 8px 0px;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: black;
-  color: white;
-  border: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-agregar:hover {
-  -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.55);
-  box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.55);
-  transition: all 0.2s ease-in-out;
-  background-color: #e6950a;
-}
-
+/* ESTILOS DEL BOTON*/
 .buttonDetail {
   display: flex;
   height: 3em;
@@ -127,4 +94,34 @@
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+/* MEDIAAA */
+
+@media screen and (max-width: 780px) {
+  .descripcion {
+    font-size: 1.1rem;
+  }
+
+  .pricee {
+    color: white;
+    font-size: 2rem;
+  }
+  .container-detail {
+    background-color: black;
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  .descripcion {
+    color: white;
+    text-align: start;
+    margin-top: 20px;
+  }
 }

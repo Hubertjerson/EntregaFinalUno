@@ -1,27 +1,38 @@
-import { Facebook, Instagram, StorefrontOutlined, Twitter, WhatsApp } from '@material-ui/icons';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../Css/_Footer.css';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { FaFacebookF } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="contenedor">
-        <div className="footer__info">
-          <div className="footer__datos">
-            <h3>StylosMikasa</h3>
-            <p><i> <StorefrontOutlined/> </i>Urb. EL GOLF Local 3 - N°65</p>
-            <p><i> <WhatsApp/> </i>+51 9291-455-8749</p>
+    <div className="container-fluid fondo-footer">
+      <div className="row">
+        <div className="col-lg-12 d-flex flex-row justify-content-center mt-2">
+          <div className="redes">
+            <AiOutlineInstagram />
           </div>
-
-          <div className="footer__media">
-            <Link to=''><i> <Facebook/> </i></Link>
-            <Link to=''><i> <Instagram/> </i></Link>
-            <Link to=''><i> <Twitter/> </i></Link>
+          <div className="redes">
+            <FaFacebookF />
+          </div>
+        </div>
+        <div className="col-lg-12 d-flex flex-row justify-content-center mt-4">
+          <div className="info">
+            <h6 className="text-center">
+              StylosMikasa - Atención de Lunes a Viernes de 8:00
+              a 17:00hs y Sábados de 9:00 a 14:00hs.
+            </h6>
+          </div>
+        </div>
+        <div className="col-lg-12 d-flex flex-row justify-content-center mt-4 copy">
+          <div className="">
+            <h6 className="text-center eric mt-2 mb-2">
+              Design by Jerson Huaman
+            </h6>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
 

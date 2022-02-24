@@ -12,15 +12,15 @@ const ItemDetail = ({ item }) => {
 
     return (
         <>
-            <div className='Container text-decoration-none'>
-                <div className='Wrapper'>
-                    <div className='ImgContainer'>
-                        <img src={item.img} alt={item.name} className='Image' />
+            <div className='container mt-4 mb-4'>
+                <div className='row d-flex flex-row justify-content-center align-content-center'>
+                    <div className='col-lg-6 d-flex justify-content-center'>
+                        <img src={item.img} alt={item.name} className='img-detail img-fluid max-width: 100%;' />
                     </div>
-                    <div className='InfoContainer'>
+                    <div className='col-lg-6 d-flex flex-column justify-content-start container-detail'>
                         <h1 className='Title'>{item.name}</h1>
-                        <p className='Desc'>{item.description}</p>
-                        <h3 className='Price'>${item.price}</h3>
+                        <p className='descripcion'>{item.description}</p>
+                        <h3 className='pricee'>${item.price}</h3>
                         <div className='mt-5'>
                             {count === 0 ?
                                 <ItemCount stock={item.stock} onAdd={addHandler} />
