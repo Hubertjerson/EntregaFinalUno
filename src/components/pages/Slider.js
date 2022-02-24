@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { sliderItems } from "../data";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { Link } from 'react-router-dom';
+import '../Css/_Slider.css';
 
 const Container = styled.div`
     width:100%;
@@ -99,7 +100,14 @@ const Slider = () => {
                         <InfoContainer>
                             <Title>{item.title}</Title>
                             <Desc>{item.desc}</Desc>
-                            <Button><Link to='/category/hombre'>Ingresar</Link></Button>
+                            <Button>
+                                <button class="cta">
+                                    <span class="hover-underline-animation"> <Link to='/category/hombre' className="text-decoration-none text-black">Comprar Ahora</Link> </span>
+                                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                                        <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                                    </svg>
+                                </button>
+                            </Button>
                         </InfoContainer>
                     </Slide>
                 ))}
