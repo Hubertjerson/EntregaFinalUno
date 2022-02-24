@@ -1,7 +1,7 @@
-.Container{
-    padding-top: 5rem;
-    text-align: center;
-    justify-content: center;
+.Container {
+  padding-top: 5rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .Wrapper {
@@ -39,8 +39,7 @@
   margin-bottom: 30px;
 }
 
-
-.btn-agregar{
+.btn-agregar {
   margin: 8px 0px;
   font-size: 1rem;
   font-weight: 500;
@@ -50,14 +49,13 @@
   transition: all 0.2s ease-in-out;
 }
 
-.btn-agregar:hover{
-  -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.55);
-  -moz-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.55);
-  box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.55);
+.btn-agregar:hover {
+  -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.55);
   transition: all 0.2s ease-in-out;
   background-color: #e6950a;
 }
-
 
 .buttonDetail {
   display: flex;
@@ -73,23 +71,60 @@
   border: none;
   background: #fff;
   margin-left: 17rem;
- }
- 
+}
+
 .buttonDetail > svg {
   margin-right: 5px;
   margin-left: 5px;
   font-size: 20px;
   transition: all 0.4s ease-in;
- }
- 
+}
+
 .buttonDetail:hover > svg {
   font-size: 1.2em;
   transform: translateX(-5px);
- }
- 
+}
+
 .buttonDetail:hover {
   box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
   transform: translateY(-2px);
- }
+}
 
- 
+.btnItDet {
+  width: 10.5em;
+  height: 3em;
+  margin: 0.5em;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btnItDet:hover {
+  color: black;
+}
+
+.btnItDet:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btnItDet:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}

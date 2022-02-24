@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import '../Css/_ItemCount.css';
 
-const ItemCount = ({stock, onAdd}) => {
+const ItemCount = ({ stock, onAdd }) => {
 
     const [counter, setCounter] = useState(1);
 
-    const Incrementar = () => counter+1 <= stock ? setCounter(counter + 1) : setCounter(counter);
-    const Disminuir = () =>  counter-1 >= 1 ? setCounter(counter - 1) : setCounter(1);
-    const Agregar = ()=> onAdd(counter);
+    const Incrementar = () => counter + 1 <= stock ? setCounter(counter + 1) : setCounter(counter);
+    const Disminuir = () => counter - 1 >= 1 ? setCounter(counter - 1) : setCounter(1);
+    const Agregar = () => onAdd(counter);
 
 
     return (
@@ -18,7 +18,8 @@ const ItemCount = ({stock, onAdd}) => {
                 <button className='container-add-substract' onClick={Disminuir}>-</button>
             </div>
             <div>
-                <button onClick={Agregar} className="boton-agregar">Agregar al carrito</button>
+                <button onClick={Agregar} className="boton-agregar button-Count"><span>Agregar al Carrito</span>
+                    <div class="liquid"></div></button>
             </div>
         </div>
     )
