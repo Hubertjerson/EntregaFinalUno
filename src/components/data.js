@@ -2,6 +2,7 @@ import invierno from './assets/invierno.jpg';
 import otono from './assets/otoño.jpg';
 import page from './assets/page.jpg';
 
+
 export const sliderItems = [
     {
         id: 1,

@@ -5,6 +5,7 @@ export const products = [
         price: 109.95,
         description: "Tu mochila perfecta para el día a día y los paseos por el bosque. Guarde su computadora portátil (hasta 15 pulgadas) en la funda acolchada, su diario",
         category: "hombre",
+        stock:10,
         img: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
     },
     {
@@ -13,6 +14,7 @@ export const products = [
         price: 22.3,
         description: "Estilo ajustado, manga larga raglán en contraste, tapeta henley de tres botones, peso ligero y tela suave para un uso cómodo y transpirable. Y camisas con costuras sólidas con cuello redondo hechas para mayor durabilidad y un gran calce para la ropa de moda casual y los fanáticos del béisbol acérrimos. El escote redondo estilo henley incluye una tapeta de tres botones.",
         category: "hombre",
+        stock:10,
         img: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
     },
     {
@@ -21,6 +23,7 @@ export const products = [
         price: 55.99,
         description: "Grandes chaquetas de abrigo para primavera/otoño/invierno, adecuadas para muchas ocasiones, como trabajo, senderismo, camping, montaña/escalada, ciclismo, viajes u otras actividades al aire libre. Buena opción de regalo para usted o su familiar. Un cálido amor al padre, esposo o hijo en este día de acción de gracias o Navidad.",
         category: "hombre",
+        stock:10,
         img: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
     },
     {
@@ -29,6 +32,7 @@ export const products = [
         price: 15.99,
         description: "El color podría ser ligeramente diferente en la pantalla y en la práctica. / Tenga en cuenta que las construcciones corporales varían según la persona, por lo tanto, la información detallada sobre el tamaño debe revisarse a continuación en la descripción del producto.",
         category: "hombre",
+        stock:10,
         img: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
     },
     {
@@ -37,6 +41,7 @@ export const products = [
         price: 695,
         description: "De nuestra colección Legends, el Naga se inspiró en el mítico dragón de agua que protege la perla del océano. Úselo mirando hacia adentro para recibir amor y abundancia, o hacia afuera para protección.",
         category: "accesorio",
+        stock:10,
         img: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
     },
     {
@@ -45,6 +50,7 @@ export const products = [
         price: 168,
         description: "Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días. Diseñado y vendido por Hafeez Center en los Estados Unidos. Satisfacción garantizada. Devuelva o cambie cualquier pedido dentro de los 30 días.",
         category: "accesorio",
+        stock:10,
         img: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
     },
     {
@@ -53,6 +59,7 @@ export const products = [
         price: 9.99,
         description: "Anillo de promesa de diamante solitario de compromiso de boda creado clásico para ella. Regalos para consentir más a tu amor por Compromiso, Boda, Aniversario, San Valentín...",
         category: "accesorio",
+        stock:10,
         img: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
     },
     {
@@ -61,6 +68,7 @@ export const products = [
         price: 10.99,
         description: "Pendientes tipo túnel con doble acampanado chapados en oro rosa. Hecho de acero inoxidable 316L",
         category: "accesorio",
+        stock:10,
         img: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
     },
     {
@@ -69,6 +77,7 @@ export const products = [
         price: 64,
         description: "Compatibilidad con USB 3.0 y USB 2.0 Transferencias de datos rápidas Mejora el rendimiento de la PC Alta capacidad; Compatibilidad NTFS formateado para Windows 10, Windows 8.1, Windows 7; Es posible que sea necesario reformatear para otros sistemas operativos; La compatibilidad puede variar según la configuración de hardware y el sistema operativo del usuario",
         category: "electronics",
+        stock:10,
         img: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
     },
     {
@@ -77,6 +86,7 @@ export const products = [
         price: 109,
         description: "Fácil actualización para un arranque, apagado, carga de aplicaciones y respuesta más rápidos (en comparación con el disco duro SATA de 2,5 a 5400 RPM; según las especificaciones publicadas y las pruebas comparativas internas que utilizan PCMark Vantage Scores) Aumenta el rendimiento de escritura en ráfaga, lo que lo hace ideal para cargas de trabajo típicas de PC El equilibrio perfecto entre rendimiento y confiabilidad Velocidades de lectura/escritura de hasta 535 MB/s/450 MB/s (basado en pruebas internas; el rendimiento puede variar según la capacidad de la unidad, el dispositivo host, el sistema operativo y la aplicación).",
         category: "electronics",
+        stock:10,
         img: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
     },
     {
@@ -85,6 +95,7 @@ export const products = [
         price: 109,
         description: "El flash 3D NAND se aplica para ofrecer altas velocidades de transferencia Velocidades de transferencia notables que permiten un arranque más rápido y un mejor rendimiento general del sistema. La avanzada tecnología de caché SLC permite un aumento del rendimiento y una vida útil más larga. Tecnología de recolección de basura, RAID y ECC (Comprobación y corrección de errores) para proporcionar un rendimiento optimizado y una mayor confiabilidad.",
         category: "electronics",
+        stock:10,
         img: "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
     },
     {
@@ -93,6 +104,7 @@ export const products = [
         price: 114,
         description: "Amplíe su experiencia de juego de PS4, juegue en cualquier lugar Configuración rápida y fácil Diseño elegante con alta capacidad, garantía limitada del fabricante de 3 años",
         category: "electronics",
+        stock:10,
         imag: "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
     },
     {
@@ -101,6 +113,7 @@ export const products = [
         price: 599,
         description: "21. Pantalla IPS de pantalla ancha Full HD (1920 x 1080) de 5 pulgadas y tecnología de sincronización libre de Radeon. ultrafino | Tiempo de respuesta de 4 ms | Relación de aspecto del panel IPS - 16: 9. Color admitido - 16. 7 millones de colores. Brillo - 250 nit Ángulo de inclinación - 5 grados a 15 grados. Ángulo de visión horizontal - 178 grados. Ángulo de visión vertical - 178 grados 75 hercios",
         category: "electronics",
+        stock:10,
         img: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
     },
     {
@@ -109,6 +122,7 @@ export const products = [
         price: 999.99,
         description: "MONITOR DE JUEGOS CURVADO SUPER ULTRAWIDE 32: 9 DE 49 PULGADAS con pantalla dual de 27 pulgadas una al lado de la otra TECNOLOGÍA QUANTUM DOT (QLED), soporte HDR y calibración de fábrica que proporciona un contraste y un color increíblemente realistas y precisos ALTA VELOCIDAD DE REFRESCO DE 144 HZ y un tiempo de respuesta ultrarrápido de 1 ms elimine el desenfoque de movimiento, el efecto fantasma y reduzca el retraso de entrada",
         category: "electronics",
+        stock:10,
         img: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
     },
     {
@@ -117,6 +131,7 @@ export const products = [
         price: 56.99,
         description: "Nota: Las chaquetas son de tamaño estándar de EE. UU., elija el tamaño que usa habitualmente. Material: 100 % poliéster; Forro desmontable: forro polar cálido. Forro funcional desmontable: respetuoso con la piel, ligero y cálido. Chaqueta con forro de cuello alto, te mantiene caliente en climas fríos. Bolsillos con cremallera: 2 bolsillos con cremallera para las manos, 2 bolsillos con cremallera en el pecho (suficientes para guardar tarjetas o llaves). ) y 1 bolsillo oculto en el interior. Los bolsillos para las manos con cremallera y el bolsillo oculto mantienen sus cosas seguras. Diseño humanizado: capucha ajustable y desmontable y puño ajustable para evitar el viento y el agua, para un ajuste cómodo. El diseño desmontable 3 en 1 brinda más comodidad, puede separar el abrigo y el interior según sea necesario, o usarlos juntos. Es adecuado para diferentes estaciones y lo ayuda a adaptarse a diferentes climas.",
         category: "mujer",
+        stock:10,
         img: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
     },
     {
@@ -125,6 +140,7 @@ export const products = [
         price: 29.95,
         description: "100 % POLIURETANO (exterior) 100 % POLIÉSTER (forro) 75 % POLIÉSTER 25 % ALGODÓN (JERSEY), Material de piel sintética para estilo y comodidad / 2 bolsillos en la parte delantera, 2 - For - One Chaqueta de piel sintética estilo denim con capucha, Detalle de botones en cintura / Detalle de costuras en los costados, LAVAR A MANO SOLAMENTE / NO USAR LEJÍA / SECAR AL LÍNEA / NO PLANCHAR",
         category: "mujer",
+        stock:10,
         img: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
     },
     {
@@ -133,6 +149,7 @@ export const products = [
         price: 39.99,
         description: "Ligero perfecto para viajes o ropa informal -- - Manga larga con capucha, diseño de cintura con cordón ajustable. Chubasquero con cierre frontal de botón y cremallera, totalmente forrado a rayas y El impermeable tiene 2 bolsillos laterales son de buen tamaño para guardar todo tipo de cosas, cubre las caderas, y la capucha es generosa pero no exagera. La capucha forrada de algodón con cordones ajustables le da un estilo real.",
         category: "mujer",
+        stock:10,
         img: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
     },
     {
@@ -141,6 +158,7 @@ export const products = [
         price: 9.85,
         description: "95 % RAYÓN, 5 % SPANDEX, Fabricado en EE. UU. o importado, No usar lejía, Tejido liviano con gran elasticidad para mayor comodidad, Acanalado en mangas y escote / Doble costura en el dobladillo inferior",
         category: "mujer",
+        stock:10,
         img: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
     },
     {
@@ -149,6 +167,7 @@ export const products = [
         price: 7.95,
         description: "100 % poliéster, lavar a máquina, 100 % interlock de poliéster catiónico, lavar a máquina y preencogido para un gran ajuste, ligero, espacioso y muy transpirable con tela que absorbe la humedad que ayuda a mantener la humedad alejada, tela suave y ligera con cuello en V cómodo y un ajuste más delgado, ofrece una silueta elegante y más femenina y mayor comodidad",
         category: "mujer",
+        stock:10,
         img: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
     },
     {
@@ -157,6 +176,7 @@ export const products = [
         price: 12.99,
         description: "95 % Algodón, 5 % Spandex, Características: Informal, Manga corta, Estampado de letras, Cuello en V, Camisetas de moda, La tela es suave y tiene algo de elasticidad., Ocasión: Informal / Oficina / Playa / Escuela / Hogar / Calle. Temporada : Otoño invierno Primavera Verano.",
         category: "mujer",
+        stock:10,
         img: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
     },
 ];

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Counter from '../Counter';
 import '../Item/Item.css';
 
 const Item = ({ img, name, price, id }) => {
@@ -11,7 +10,6 @@ const Item = ({ img, name, price, id }) => {
                 <div class="Info">
                     <h5 class="Info">{name.substring(0, 12)}</h5>
                     <p class="Info">$ {price}</p>
-                    <Counter />
                 </div>
             </Link>
         </div >
