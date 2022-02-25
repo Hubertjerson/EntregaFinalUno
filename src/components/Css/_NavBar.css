@@ -25,7 +25,8 @@
 }
 
 .img-logo{
-  width: 150px;
+  width: 200px;
+  height: 70px;
   color: black;
   margin: 0px 5px;
   transition: all 0.5s ease-in-out;
@@ -87,22 +88,6 @@
   margin: 0px 15px;
   padding: 0px 10px;
   display: none;
-}
-
-.logoUsuarioIn{
-color: orange;
-font-size: 2rem;
-}
-
-.logoUsuarioOut{
-color: black;
-font-size: 2rem;
-}
-
-.emailUser{
-font-size: 0.8rem;
-color: black;
-margin: 0px 8px;
 }
 
 @media screen and (max-width:931px){
@@ -173,9 +158,5 @@ margin: 0px 8px;
     .nav-links:hover{
         color: orange;
         transition: all 0.2s ease-in-out;
-    }
-
-    .emailUser{
-      display: none;
     }
 }

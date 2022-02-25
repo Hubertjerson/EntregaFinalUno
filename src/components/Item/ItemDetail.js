@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ItemCount from '../Item/ItemCount';
+import { CartContext } from '../context/CartContext';
+import ItemCount from './ItemCount';
 import '../Css/_ItemDetail.css';
 
 const ItemDetail = ({ item }) => {
+
     const [count, setCount] = useState(0)
+
+    const { addItem } = useContext(CartContext)
+
     const addHandler = (cantidad) => {
+        addItem(item, cantidad)
         setCount(cantidad)
     };
-
 
     return (
         <>
@@ -39,6 +44,7 @@ const ItemDetail = ({ item }) => {
             </div>
         </>
     );
-};
+
+}
 
 export default ItemDetail;

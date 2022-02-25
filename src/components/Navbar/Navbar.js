@@ -14,8 +14,8 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-container-logo">
-                <NavLink to="/">
-                    <img />
+                <NavLink to="/" className='text-decoration-none text-black'>
+                    <h1>StylosMikasa</h1>
                 </NavLink>
             </div>
             <div>
@@ -82,9 +82,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
-                <NavLink to="/cart">
                     <CartWidget />
-                </NavLink>
             </div>
         </nav>
     );
