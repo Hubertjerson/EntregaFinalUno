@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 import { traerProductos } from './items';
+import { Loader } from '../pages/Loader';
 
 const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
     }, [id]);
 
 
-    return <>{loading ? <h1>Cargando.....</h1> : <ItemDetail item={item} />}</>;
+    return <>{loading ? <Loader/> : <ItemDetail item={item} />}</>;
 };
 
 export default ItemDetailContainer;

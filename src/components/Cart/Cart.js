@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { CartContext } from '../context/CartContext'
-import { CartItem } from './CartItem'
+import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
+import { CartItem } from './CartItem';
+import { Loader } from '../pages/Loader';
 import '../Css/_cart.scss'
 
 export const Cart = () => {
@@ -18,7 +19,7 @@ export const Cart = () => {
 
   return (
     <div className="cartContainer">
-      {loading ? <h2 className='Titulo_Cart'>Loading....</h2>
+      {loading ? <Loader/>
         :
         <>
           {!cart.length ? <div className="emptyCart">
