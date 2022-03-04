@@ -1,12 +1,51 @@
-# ECOMMERCE
+# Proyecto E-Commerce en react de Tienda de ropa Jerson Huaman
+Este proyecto simula un ecommerce de una tienda de ropa. Salvo por la sección de bienvenida (Slider), el resto de las páginas es exclusivamente para vista y selección de productos.
 
-Primer entregable , aun no terminado de una tienda online , que cuenta con diferentes productos y diferentes categorias.
+
+## Navegación
+La barra de navegación ofrece links a las distintas categorías de productos. En cualquier selección se renderiza el componente ItemListContainer, que muestra productos distintos según un filtro de la base de datos. Cada producto es un componente Item.
+La categoría a filtrar se toma usando useParams().
+
+## Item - ItemDetail
+
+Cada componente Item muestra un detalle del producto y la opción para agregar al carrito. Esto renderiza el componente ItemDetailContainer, que toma el ID del producto correspondiente usando useParams(), y hace un pedido a la base de datos de ese id. Con el resultado renderiza el componente ItemDetail que muestra el detalle del producto y la opción de agregar al carrito, ajustando la cantidad al stock disponible según la base de datos.
+
+## Cart
+
+Cuando haya al menos un producto agregado al carrito se hace visible en el NavComponent el ícono para ir al carrito, que muestra minimizadamente la cantidad de productos agregados y el precio total al hacer hover sobre el ícono. Clickearlo (o clickear el botón TERMINAR COMPRA en el ItemDetail) redirecciona a /cart, lo que renderiza el componente Cart con el detalle de los productos seleccionados hasta el momento, la posibilidad de eliminar alguno y de continuar con la confirmación de la compra.
+
+## Cart Context
+
+Todos los procesos mencionados anteriormente están atravesados por el contexto CartContext, que reune la información del carrito, los productos seleccionados, y ofrece métodos para limpiar el carrito, calcular el total y agregar productos.
 
 ## Tecnologías y librerías:
 
 - Interfaz realizada con ReactJS - Create React App
-- Estilos con Bootstrap, Material-UI y Styles-Components
-- Ruteo con React Router Dom
+- [React Icons](https://react-icons.github.io/react-icons/).\
+  React Icons importamos en nuestro proyecto cualquier ícono que esta librería nos provee.
+- [styled-comoponents](https://styled-components.com/).\
+  Styled Components es una alternativa de mejorar CSS para diseñar componentes en React..
+- [Material icons - MIU](https://mui.com/components/material-icons/).\
+  Material icons importamos en nuestro proyecto cualquier ícono que esta librería nos provee.
+- [React Bootstrap](https://react-bootstrap.github.io/).\
+  React Bootstrap nos ayuda gracias a sus componentes y sus clases ya creadas a hacer la maquetación del sitio mas rapidamente.
+- [React-Router-Dom](https://reactrouter.com/web/guides/quick-start).\
+  Esta librería se encarga de generar rutas dinámicas para asi facilitar la navegabilidad por el sitio.
+
+## Hooks Implementados
+
+useState (React).\
+Usado para generar estados locales al componente y tambien guardar esos estados para poder luego modificarlos.
+
+useEffect (React).\
+Usado para montar y hacer un render de los componentes solo cuando se los tiene que mostrar.
+
+useContext (React).\
+Con useContext logramos crear un contexto para poder tener dentro todos los datos, estados y funciones que querramos pasar a cualquier componente.
+
+useParams y useHistory (React-Router-Dom).\
+Con useParams se detecta el parametro que le indicamos por la URL.
+
 
 ## Descargar y correr el proyecto
 
@@ -17,15 +56,6 @@ Correr el servidor:
 Se abre una pestaña del navegador en el puerto 3000:
 #### Sino copiar esta URL y pegarla en el navegador: http://localhost:3000
 
-# ScreenShot
 
-![Imagen](https://github.com/Hubertjerson/Imagenes/blob/01feb6d86277b02f3e5d05e9d2aa9959553cca98/React%20App%20-%20Google%20Chrome%2022_02_2022%201_35_53.png)
-
-![Imagen2](https://github.com/Hubertjerson/Imagenes/blob/01feb6d86277b02f3e5d05e9d2aa9959553cca98/React%20App%20-%20Google%20Chrome%2022_02_2022%201_39_18.png)
-
-
-![Imagen3](https://github.com/Hubertjerson/Imagenes/blob/01feb6d86277b02f3e5d05e9d2aa9959553cca98/React%20App%20-%20Google%20Chrome%2022_02_2022%201_39_30.png)
-
-![Imagen4](https://github.com/Hubertjerson/Imagenes/blob/01feb6d86277b02f3e5d05e9d2aa9959553cca98/React%20App%20-%20Google%20Chrome%2022_02_2022%201_39_57.png)
 
 ### End
