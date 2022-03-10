@@ -8,7 +8,7 @@ const Item = ({ img, name, price, id }) => {
             <Link to={`/item/${id}`} className="text-decoration-none">
                 <img class="Imagen" src={img} alt={name} />
                 <div class="Info">
-                    <h5 class="Info">{name.substring(0, 12)}</h5>
+                    <h5 class="Info">{name}</h5>
                     <p class="Info">$ {price}</p>
                 </div>
             </Link>

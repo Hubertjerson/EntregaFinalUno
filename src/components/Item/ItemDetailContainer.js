@@ -11,20 +11,6 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
     const { id } = useParams();
 
-//    useEffect(() => {
-//        setLoading(true);
-//        traerProductos
-//            .then((res) => {
-//                const unicoProd = res.find((i) => i.id === parseInt(id));
-//                setItem(unicoProd);
-//                setLoading(false);
-//            })
-//            .catch((error) => {
-//                console.error(error);
-//            });
-//    }, [id]);
-
-
 const getSelect = async () => {
     try{
         const document = doc(db,"items",id)
@@ -50,3 +36,20 @@ useEffect(() =>{
 };
 
 export default ItemDetailContainer;
+
+
+
+
+
+//    useEffect(() => {
+//        setLoading(true);
+//        traerProductos
+//            .then((res) => {
+//                const unicoProd = res.find((i) => i.id === parseInt(id));
+//                setItem(unicoProd);
+//                setLoading(false);
+//            })
+//            .catch((error) => {
+//                console.error(error);
+//            });
+//    }, [id]);
