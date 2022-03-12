@@ -1,43 +1,30 @@
-.nav__cart {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  position: absolute;
-  right: 2%;
-  top: 15px;
-  padding: 0 5px;
-}
-.nav__carrito {
-  font-size: 2.4rem;
+.carrito{
+  font-size: 30px;
   color: black;
-}
-.spanCart {
-  color: black;
-  font-size: 2rem;
-}
-.cartW-precio {
-  position: absolute;
-  right: -35px;
-  top: 5px;
-  color: black;
-  font-weight: 700;
-  opacity: 0;
-  transition: all 0.5s ease-out;
-}
-
-.cartW-precio:hover {
-  background-color: brown;
-  padding-left: 8px;
-  opacity: 1;
-  right: 70px;
-  transition: all 0.5s ease-out 0.2s;
-}
-.nav__cart--show {
   visibility: visible;
   opacity: 1;
+  transition: all .5s ease-out;
 }
-.cartW-precio {
-  opacity: 1;
-  right: 68px;
-  transition: all 0.5s ease-out 0.2s;
+
+.unidades{
+  margin-left: 4px;
+  margin-right: 4px;
+  border: 1px solid black;
+  padding: 0px 8px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.carrito:hover{
+  color: orange;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width:760px){
+  .carrito{
+      margin: 0px 0px;
+      padding-right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
 }

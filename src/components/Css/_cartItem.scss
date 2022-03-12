@@ -17,9 +17,6 @@
         width: 50%;
         display: flex;
         align-items: center;
-        img {
-            width: 40%;
-        }
         div {
             margin-left: 20px;
 
@@ -28,6 +25,9 @@
                 font-size: 1.6rem;
                 text-transform: uppercase;
             }
+        }
+        .Image {
+            width: 80%;
         }
     }
 

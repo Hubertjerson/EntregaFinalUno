@@ -1,11 +1,13 @@
 .Container{
-    flex: 1;
+    flex: auto;
     margin: 10px;
     min-width: 280px;
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .Imagen{

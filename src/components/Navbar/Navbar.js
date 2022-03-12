@@ -1,10 +1,10 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
-import CartWidget from '../Cart/CartWidget';
+import { CartWidget } from '../CartWidget/CartWidget'
 import '../Css/_NavBar.css';
 
+export const NavBar = () => {
 
-const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const handleClick = () => {
@@ -14,9 +14,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-container-logo">
-                <NavLink to="/" className='text-decoration-none text-black'>
+                <Link to="/" className='text-decoration-none text-black'>
                     <h1>StylosMikasa</h1>
-                </NavLink>
+                </Link>
             </div>
             <div>
                 <ul
@@ -25,59 +25,13 @@ const Navbar = () => {
                     }
                 >
                     <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/"
-                            activeClassName="selected"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Home
-                        </NavLink>
+                        <Link to='/productos/hombre' activeClassName="selected" className="nav-links" onClick={handleClick}>Remeras</Link>
                     </li>
                     <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/category/hombre"
-                            activeClassName="selected"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Hombre
-                        </NavLink>
+                        <Link to='/productos/mujer' activeClassName="selected" className="nav-links" onClick={handleClick}>Zapatos</Link>
                     </li>
                     <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/category/mujer"
-                            activeClassName="selected"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Mujer
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/category/accesorio"
-                            activeClassName="selected"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Accesorio
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            exact
-                            to="/category/zapatilla"
-                            activeClassName="selected"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Zapatillas
-                        </NavLink>
+                        <Link to='/productos/zapatillas' activeClassName="selected" className="nav-links" onClick={handleClick}>Gorros</Link>
                     </li>
                 </ul>
             </div>
@@ -86,6 +40,4 @@ const Navbar = () => {
             </div>
         </nav>
     );
-};
-
-export default Navbar;
+}

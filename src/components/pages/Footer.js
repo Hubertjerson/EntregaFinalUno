@@ -4,7 +4,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className="container-fluid fondo-footer">
       <div className="row">
@@ -35,5 +35,3 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer

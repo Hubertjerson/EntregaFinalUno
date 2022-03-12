@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/_Error404.css';
 
-const Error404 = () => {
+export const Error404 = () => {
     return (
         <div id='notFound'>
             <div className='notfound'>
@@ -19,5 +19,3 @@ const Error404 = () => {
         </div>
     )
 }
-
-export default Error404
