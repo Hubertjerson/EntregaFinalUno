@@ -25,13 +25,16 @@ export const NavBar = () => {
                     }
                 >
                     <li className="nav-item">
-                        <Link to='/productos/hombre' activeClassName="selected" className="nav-links" onClick={handleClick}>Remeras</Link>
+                        <Link to='/productos/hombre' activeClassName="selected" className="nav-links" onClick={handleClick}>Hombres</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/productos/mujer' activeClassName="selected" className="nav-links" onClick={handleClick}>Zapatos</Link>
+                        <Link to='/productos/mujer' activeClassName="selected" className="nav-links" onClick={handleClick}>Mujer</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/productos/zapatillas' activeClassName="selected" className="nav-links" onClick={handleClick}>Gorros</Link>
+                        <Link to='/productos/zapatillas' activeClassName="selected" className="nav-links" onClick={handleClick}>Zapatillas</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='/productos/accesorios' activeClassName="selected" className="nav-links" onClick={handleClick}>Accesorios</Link>
                     </li>
                 </ul>
             </div>
