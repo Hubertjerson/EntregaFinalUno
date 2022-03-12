@@ -130,3 +130,9 @@
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }
+
+@media screen and (max-width: 780px) {
+  .container-buton{
+    margin-right: 2em;
+  }
+}

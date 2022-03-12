@@ -6,7 +6,7 @@ export const ItemList = ({ productos }) => {
 
     return (
         <>
-            <h2>Productos</h2>
+            <h2 className="text-center p-lg-4 text-uppercase">Productos</h2>
             <hr />
             <div style={{
                 display: 'flex',

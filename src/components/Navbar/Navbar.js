@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
 import { CartWidget } from '../CartWidget/CartWidget'
+import { AiOutlineClose } from 'react-icons/ai';
+import { FaBars } from 'react-icons/fa';
 import '../Css/_NavBar.css';
 
 export const NavBar = () => {
@@ -40,6 +42,11 @@ export const NavBar = () => {
             </div>
             <div>
                 <CartWidget />
+            </div>
+            <div className="nav-container-icon" onClick={handleClick}>
+                <div className="d-flex flex-row justify-content-center align-items-center align-content-center">
+                    {click ? <AiOutlineClose /> : <FaBars />}
+                </div>
             </div>
         </nav>
     );

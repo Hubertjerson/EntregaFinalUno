@@ -1,6 +1,8 @@
 .container-detail {
   border: 1px solid rgba(176, 176, 176, 0.543);
   width: 404px;
+  justify-content: center;
+  text-align: center;
 }
 
 .Title {
@@ -22,81 +24,6 @@
   text-align: center;
   margin-top: 20px;
 }
-
-/* ESTILOS DEL BOTON*/
-.buttonDetail {
-  display: flex;
-  height: 3em;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-  background-color: #eeeeee4b;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  transition: all 0.2s linear;
-  cursor: pointer;
-  border: none;
-  background: #fff;
-  margin-left: 8rem;
-}
-
-.buttonDetail > svg {
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: 20px;
-  transition: all 0.4s ease-in;
-}
-
-.buttonDetail:hover > svg {
-  font-size: 1.2em;
-  transform: translateX(-5px);
-}
-
-.buttonDetail:hover {
-  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
-  transform: translateY(-2px);
-}
-
-.btnItDet {
-  width: 10.5em;
-  height: 4em;
-  margin: 0.5em;
-  margin-left: 5rem;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 0.625em;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.btnItDet:hover {
-  color: black;
-}
-
-.btnItDet:after {
-  content: "";
-  background: white;
-  position: absolute;
-  z-index: -1;
-  left: -20%;
-  right: -20%;
-  top: 0;
-  bottom: 0;
-  transform: skewX(-45deg) scale(0, 1);
-  transition: all 0.5s;
-}
-
-.btnItDet:hover:after {
-  transform: skewX(-45deg) scale(1, 1);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
 /* MEDIAAA */
 
 @media screen and (max-width: 780px) {
@@ -105,24 +32,27 @@
   }
 
   .pricee {
-    color: white;
+    color: black;
     font-size: 2rem;
   }
   .container-detail {
-    background-color: black;
+    background-color: white;
     margin-top: 10px;
-    width: 300px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
   }
 
   .price {
     font-weight: 600;
     font-size: 1.8rem;
-    color: white;
+    color: black;
   }
 
   .descripcion {
-    color: white;
+    color: black;
     text-align: start;
     margin-top: 20px;
+    text-align:justify;
   }
 }

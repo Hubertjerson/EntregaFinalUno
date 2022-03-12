@@ -2,7 +2,7 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 import { BsFillTrashFill } from 'react-icons/bs'
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import '../Css/_cart.scss'
 import '../Css/_cartItem.scss'
 
@@ -14,8 +14,10 @@ export const Cart = () => {
     // render si el cart está vacío
     if (cart.length === 0) {
         return <div className="cartContainer">
-            <h2 className='Titulo_Cart'>Tu carrito está vacío</h2>
-            <Link to="/" className="btn btn-primary">Volver</Link>
+            <div className="emptyCart">
+                <h2 className='Titulo_Cart'>Tu carrito está vacío</h2>
+                <Link to="/" className="btn btn-primary">Volver</Link>
+            </div>
         </div>
     }
 

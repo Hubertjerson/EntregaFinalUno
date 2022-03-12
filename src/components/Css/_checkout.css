@@ -1,0 +1,39 @@
+.checkoutContainer {
+  max-width: 1100px;
+  margin: 163px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buyerData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buyer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buyer-input {
+  width: 500px;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 2px solid rgba(165, 42, 42, 0.5);
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+.buyer-input:focus {
+  outline: none;
+  border: 2px solid rgba(165, 42, 42, 1);
+}
+.dataButtons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+}

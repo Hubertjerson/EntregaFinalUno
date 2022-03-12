@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext"
 import { generarOrden } from "../firebase/generarOrden"
 import { ThankYou } from "./ThankYou"
 import { validar } from "./validar"
-import '../Css/_checkout.scss'
+import '../Css/_checkout.css'
 
 export const Checkout = () => {
 
