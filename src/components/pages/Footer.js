@@ -5,40 +5,30 @@ import { FaFacebookF } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <div className="main-footer">
-      <div className="container">
-        <div className="row">
-          {/* Column1 */}
-          <div className="col">
-            <h1 className='text-uppercase text-center list-unstyled'>STYLOSMIKASA</h1>
-            <h1 className="text-center">
-              <h3>342-420-6969</h3>
-              <h3>LIMA-PERU</h3>
-              <h3>123 VILLA PLAZA</h3>
-            </h1>
+    <div className="container-fluid fondo-footer">
+      <div className="row">
+        <div className="col-lg-12 d-flex flex-row justify-content-center mt-2">
+          <div className="redes">
+            <AiOutlineInstagram />
           </div>
-          {/* Column2 */}
-          <div className="col">
-            <h1 className='text-uppercase text-center'>Redes Sociales</h1>
-            <ui className="text-center">
-              <h3><AiOutlineInstagram />Instagram</h3>
-              <h3><FaFacebookF />Facebook</h3>
-            </ui>
-          </div>
-          {/* Column3 */}
-          <div className="col">
-            <h4 className='text-center'>NUESTRO HORARIO DE ATENCION</h4>
-            <ui className="text-justify">
-              <h3>Atención de Lunes a Viernes de 8:00
-              a 17:00hs y Sábados de 9:00 a 14:00hs.</h3>
-            </ui>
+          <div className="redes">
+            <FaFacebookF />
           </div>
         </div>
-        <hr />
-        <div className="row text-center">
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} DESING | BY | JERSON HUAMAN
-          </p>
+        <div className="col-lg-12 d-flex flex-row justify-content-center mt-4">
+          <div className="info">
+            <h6 className="text-center">
+              TRUJILLO - ATAHUALPA 231 - Atención de Lunes a Viernes de 8:00
+              a 17:00hs y Sábados de 9:00 a 14:00hs.
+            </h6>
+          </div>
+        </div>
+        <div className="col-lg-12 d-flex flex-row justify-content-center mt-4 copy">
+          <div className="">
+            <h6 className="text-center jer mt-2 mb-2">
+              Jerson Huaman
+            </h6>
+          </div>
         </div>
       </div>
     </div>
