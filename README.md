@@ -69,7 +69,7 @@ Con useParams se detecta el parámetro que le indicamos por la URL.
 2.  En nuestra terminal elegimos un lugar para clonar la carpeta y escribimos "git clone" + link que copiamos anteriormente
 
 ```
-git clone https://github.com/Hubertjerson/EntregaFinalUno.git
+git clone https://github.com/Hubertjerson/React-Proyecto-Coder.git
 ```
 
 3.  Desde la terminal nos paramos en la carpeta raíz del proyecto e instalamos todos las dependencias que están dentro con "npm i"
